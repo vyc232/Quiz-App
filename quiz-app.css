@@ -1,0 +1,108 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	color: black;
+}
+body{
+	background-color: gainsboro;	
+	text-align: center;
+}
+#header{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+h1{
+	font-family: "Caflisch Script", cursive;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#quizInput, #header, #newQuestionForm, #doQuiz, .answerWrapper{
+	min-width: 800px;
+}
+#newQuestionForm{
+	margin: auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin-top: 15px;
+	margin-bottom: 15px;
+/*	padding-bottom: 20px;*/
+}
+input{
+	padding: 5px;
+	border-radius: 5px;
+	border-color: black;
+}
+#titles{
+	font-family: "Caflisch Script", cursive;	
+	padding: 20px;
+}
+#titles p{
+	margin-top: 30px;
+	font-size: 20px;
+}
+#titles p, #questionAdded, #answerAdded{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	word-wrap: break-word;
+}
+#titles>#answerTitle, #answerAdded{
+/*	margin-left: 20%;*/
+	margin-left: 100px;
+}
+#no-input{
+	margin: 0px auto;
+	width: 100%;
+	position: absolute;
+}
+#inputList li{
+	list-style: none;
+	padding: 20px;
+}
+#inputList p{
+	display: inline-block;
+	vertical-align: middle;
+}
+#createQuiz, #takeQuiz{
+	display: inline;
+}
+
+button, #addQuestion{
+	padding: 5px;
+	background-color: white;
+	border-color: black;
+	border-radius: 5px;
+}
+button:active, #addQuestion:active{
+	background-color: darkgray;
+}
+
+/*CSS FOR TAKING THE QUIZ*/
+#questionsLeft{
+	margin-top: 50px;
+}
+.answerWrapper{
+	margin: auto;
+	margin-top: 15px;
+	left: 0;
+	right: 0;	
+	position: absolute;
+	background-color: gainsboro; 
+/*	display: none;*/
+/*	visibility: hidden;*/
+}
+#doQuiz > .answerWrapper ~ .answerWrapper{
+	visibility: hidden;
+}
+
+.answerBoxQuestion, .wrong-answer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#spacer{
+	padding-top: 100px;
+}
+
+

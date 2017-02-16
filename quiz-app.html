@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz Application</title>
+		<link rel="stylesheet" href="quiz-app.css">
+	</head>	
+	<body>
+		<div id="header">
+			<h1>Create your quiz set</h1>
+			<div id="createQuiz"><button id="createQuizButton">Create Quiz</button></div>
+			<div id="takeQuiz"><button id="takeQuizButton">Take Quiz</button></div>
+		</div>
+		
+		<div id="quizInput">
+			<p id="questionCount">Question Count: <span id="questionCounter"></span></p>
+			<form id="newQuestionForm">
+				<input type="text" id="question" placeholder="Enter question here...">
+				<input type="text" id="answer" placeholder="Enter answer here...">
+				<input type="submit" id="addQuestion" value="Add">
+				<p id="no-input"></p>
+			</form>
+			<div id="titles"><p id="questionTitle"><strong>Question:</strong></p><p id="answerTitle"><strong>Answer:</strong></p></div>
+			<ol id="inputList">
+				<li><p id="questionAdded">car</p><p id="answerAdded">automobile</p></li>
+				<li><p id="questionAdded">kid</p><p id="answerAdded">small human</p></li>
+			</ol>			
+		</div>
+  		
+   		<div id="doQuiz">
+   			<p id="questionsLeft">Questions Left: <span id="questionsLeftCounter"></span></p>
+   			<ul id="questionList"></ul>
+			<!-- Put in via quiz-app.js
+  			<div class="answerWrapper">
+  				<p class="answerBoxQuestion"></p>
+				<form class="answerForm">
+					<input type="text" class="answerbox" placeholder="Answer">
+					<input type="submit" class="answerQuestion" value="Check Answer">
+  					<p class="wrong-answer"></p>				
+				</form>  				
+  			</div>
+  			<div class="answerWrapper">
+  				<p class="answerBoxQuestion"></p>
+				<form class="answerForm">
+					<input type="text" class="answerbox" placeholder="Answer">
+					<input type="submit" class="answerQuestion" value="Check Answer">
+  					<p class="wrong-answer"></p>				
+				</form>  				
+  			</div>  			
+			-->
+   		</div>
+   		<div id="spacer"></div>
+    	<script src="jquery-3.1.1.js"></script>
+    	<script src="quiz-app.js"></script>			
+	</body>
+</html>
+
+
+<!--
+TODO: USE AJAX TO ALLOW USER TO SELECT MULTIPLE CHOICE OR FREE RESPONSE
+		THEN BRING UP ALL THE OPTIONS FOR EITHER-->
